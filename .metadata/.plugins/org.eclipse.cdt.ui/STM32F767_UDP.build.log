@@ -1,0 +1,10 @@
+18:55:21 **** Incremental Build of configuration Debug for project STM32F767_UDP ****
+make all 
+arm-none-eabi-size   STM32F767_UDP.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40924	    128	  28672	  69724	  1105c	STM32F767_UDP.elf
+Finished building: default.size.stdout
+ 
+
+18:55:21 Build Finished. 0 errors, 0 warnings. (took 493ms)
+

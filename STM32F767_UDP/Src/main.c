@@ -87,6 +87,8 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 	unsigned counter=0;//used for delaying  udp trasmission events
+	unsigned counter_inside = 0;
+	char buffer[5];
   /* USER CODE END 1 */
 
   /* Enable I-Cache-------------------------------------------------------------*/
@@ -134,10 +136,10 @@ int main(void)
 	  ethernetif_input(&gnetif);
 
 
-	  if(counter==10000000)
+	  if(counter==5000000)
 	  {
 
-		  udp_echoclient_send("Main Loop");
+		  udp_echoclient_send(itoa(counter_inside++, buffer, 10));
 		  counter=0;
 
 	  }
